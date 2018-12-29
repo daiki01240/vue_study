@@ -1,3 +1,8 @@
+Vue.component('hello-component',{
+    template: '<p>Hello</p>'
+});
+
+
 var app = new Vue({
     el: '#app',
     data:{
@@ -8,6 +13,13 @@ var app = new Vue({
             firstName:'Taro',
             lastName:'Yamada',
             age:28
+        }, 
+        now: ''
+    },
+    methods: {
+        onclick: function () {
+            this.now = new Date().toLocaleString();
+            console.log(this.now);
         }
     }
 });

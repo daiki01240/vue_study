@@ -3,10 +3,11 @@
     <input type="text" v-bind:value=message>
     
     <p v-show="toggle">{{message}}</p>
-    
+    <hr>
     <ol>
         <li v-for="color in colors">{{color}}</li>
     </ol>
+    <hr>
 
     <ul>
         <li v-for="value in user">{{value}}</li>
@@ -17,10 +18,24 @@
             {{key}}:{{value}}
         </li>
     </ul>
-
+    <hr>
+    <button v-on:click="onclick">
+        Click!
+    </button>
+    <p>{{now}}</p>
+    <hr>
+    <p>
+        <input type="text" v-model="message">
+    </p>
+    <p>
+        <input type="text" v-model="message">
+    </p>
+    <hr>
+    <hello-component></hello-component>
+    <hello-component></hello-component>
+    <hello-component></hello-component>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
 <script type="text/javascript" src="./test.js"></script>
-
