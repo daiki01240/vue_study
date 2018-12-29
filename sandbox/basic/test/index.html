@@ -1,0 +1,23 @@
+<div id="app">
+    <p>
+        {{message}}
+    </p>
+
+    <p>
+        <a v-show="toggle" v-bind:href="url">Vue.js</a>
+    </p>
+    
+    <button v-on:click="onclick">Click!</button>
+
+    <ul>
+        <li v-for="language in languages">{{language}}</li>
+    </ul>
+
+    <p>
+        <input type="text" v-model="message">
+    </p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
