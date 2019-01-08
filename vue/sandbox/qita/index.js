@@ -38,9 +38,7 @@ var app = new Vue({
             })
             .finally(function(){
                 vm.message =''
-            })
-            ;
+            });
         }
-        
     }
 });
