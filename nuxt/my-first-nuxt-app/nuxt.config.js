@@ -25,8 +25,11 @@ module.exports = {
 
   }
   , pulgins: [
-    '~/pulgins/axios.js'
+    '~/plugins/axios.js'
   ],
+  env:{
+    QIITA_TOKEN:process.env.QIITA_TOKEN
+  },
 
   /*
   ** Build configuration
