@@ -1,8 +1,25 @@
 <template>
   <div>
-    <nuxt/>
+    <!-- <span>default layout</span> -->
+    <!-- <AppNavigation /> -->
+    <hr>
+    <nuxt />
+    <hr>
+    <footer>
+      abc
+    </footer>
   </div>
 </template>
+
+<script>
+import AppNavigation from '~/components/AppNavigation.vue'
+
+export default {
+  components:{
+    AppNavigation
+  }
+}
+</script>
 
 <style>
 html {

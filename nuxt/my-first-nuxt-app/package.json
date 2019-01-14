@@ -5,7 +5,7 @@
   "author": "daiki01240 <domo01240@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt --port 3001",
+    "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "universal-cookie": "^3.0.7"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
